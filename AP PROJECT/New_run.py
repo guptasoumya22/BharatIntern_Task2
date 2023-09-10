@@ -1,0 +1,21 @@
+from tkinter import *
+root=Tk()
+h,w=root.winfo_screenheight(),root.winfo_screenwidth()
+root.geometry('%dx%d+0+0'%(w,h))
+bus=PhotoImage(file='C:\\Users\\hp\\Downloads\\Bus.png')
+Label(root,image=bus).grid(row=0,column=0,columnspan=16,padx=w/2.5)
+Label(root,text='Online Bus Booking System',font='Arial 20',fg='Red',bg='Sky Blue').grid(row=1,column=0,columnspan=16)
+Label(root,text='Add Bus Running Details',font='Arial 18',fg='Green',bg='Sky Blue').grid(row=2,columnspan=16,pady=20)
+Label(root,text='Bus ID',font='Arial 10').grid(row=3,column=4)
+Entry(root).grid(row=3,column=5)
+Label(root,text='Running Date',font='Arial 10').grid(row=3,column=6)
+Entry(root).grid(row=3,column=7)
+Label(root,text='Seat Available',font='Arial 10').grid(row=3,column=8)
+Entry(root).grid(row=3,column=9)
+Button(root,text='Add Run',font='Arial 10',bg='Pale Green').grid(row=3,column=10)
+Button(root,text='Delete Run',font='Arial 10',bg='Pale Green').grid(row=3,column=11)
+home=PhotoImage(file='C:\\Users\\hp\\Documents\\AP PROJECT\\home.png')
+Button(root,image=home,bg='Pale Green').grid(row=4,column=10,pady=50)
+
+root.mainloop()
+

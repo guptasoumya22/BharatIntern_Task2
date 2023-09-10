@@ -1,0 +1,36 @@
+body{
+    padding: 50px 100px;
+    background-color: black;
+    backface-visibility:hidden;
+    
+
+}
+#container{
+    background-image: url(bgr.jpg);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    text-align: center;
+    padding: 90px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 50%;
+   
+}
+h1{
+    font-size: 35px;
+    padding-bottom: 5%;
+    /* display: inline; */
+    justify-content: center;
+    color: rgb(32, 3, 59);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.inp{
+    font-weight: bold;
+    padding: 5px 10px;
+
+}
+label{
+    font-weight: bolder;
+}
